@@ -1,6 +1,20 @@
-let user: [number, string] = [1, "Sanjay"];
+const small = 1;
+const medium = 2;
+const large = 3;
 
-user[0].toString(); // auto suggest number functions
-user[1].toLowerCase(); // auto suggest string functions
+// Less optimized compiled javascript
+enum Size {
+  Small = 1,
+  Medium,
+  Large,
+}
 
-user.push(1); // in tupples typescript dont show any error message and consider it as regular array
+// More optimized compiled javascript
+// const enum Size {
+//   Small = 1,
+//   Medium,
+//   Large,
+// }
+
+let mySize: Size = Size.Medium;
+console.log(mySize);

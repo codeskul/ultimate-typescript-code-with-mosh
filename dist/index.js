@@ -1,5 +1,7 @@
 "use strict";
-let user = [1, "Sanjay"];
-user[0].toString();
-user[1].toLowerCase();
+const small = 1;
+const medium = 2;
+const large = 3;
+let mySize = 2;
+console.log(mySize);
 //# sourceMappingURL=index.js.map
