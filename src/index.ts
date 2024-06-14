@@ -1,10 +1,9 @@
-let sales: number = 12_34_56_789;
-let course: string = "TypeScript";
-let is_published: boolean = true;
-let level; //any
-level = 1;
-level = "test";
+let numbers1: number[] = [1, 2, 3];
 
-function render(document) {
-  console.log(document);
-}
+let numbers2 = []; // any[]
+numbers2[0] = 1;
+numbers2[1] = "1";
+
+let numbers3 = [1, 2, "3"]; // (string | number)[]
+
+numbers1.forEach((n) => n.toString); // n. auto sugest number properties because number1 is number[]
