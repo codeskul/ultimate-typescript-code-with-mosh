@@ -1,7 +1,15 @@
 "use strict";
-const small = 1;
-const medium = 2;
-const large = 3;
-let mySize = 2;
-console.log(mySize);
+let a = 100;
+let b = "Coffee";
+let c = [true, false, false];
+let d = { age: 20 };
+let e = [3];
+let f;
+let g = [];
+let song = { title: "My song", releaseYear: 2024 };
+let prices = [100, 200, 300];
+prices[0] = "$100";
+function myFunc(a, b) {
+    return a + b;
+}
 //# sourceMappingURL=index.js.map
