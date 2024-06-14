@@ -1,20 +1,24 @@
-let employee0: { id: number; name: string } = { id: 1, name: "Sanjay" };
+// number
+let a = 100;
+// string
+let b = "Coffee";
+// Boolean[]
+let c = [true, false, false];
+// {age:number}
+let d = { age: 20 };
+// number[]
+let e = [3];
+// any
+let f;
+// any[]
+let g = [];
 
-// readonly
-let employee1: { readonly id: number; name: string } = {
-  id: 1,
-  name: "Sanjay",
-};
-
-// function as object property
-let employee2: {
-  readonly id: number;
-  name: string;
-  retire: (date: Date) => void;
-} = {
-  id: 1,
-  name: "Sanjay",
-  retire: (date: Date) => {
-    console.log(date);
-  },
-};
+let song: {
+  title: string;
+  releaseYear: number;
+} = { title: "My song", releaseYear: 2024 };
+let prices: (string | number)[] = [100, 200, 300];
+prices[0] = "$100";
+function myFunc(a: number, b: number): number {
+  return a + b;
+}
