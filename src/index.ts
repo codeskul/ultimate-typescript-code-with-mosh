@@ -1,9 +1,6 @@
-let numbers1: number[] = [1, 2, 3];
+let user: [number, string] = [1, "Sanjay"];
 
-let numbers2 = []; // any[]
-numbers2[0] = 1;
-numbers2[1] = "1";
+user[0].toString(); // auto suggest number functions
+user[1].toLowerCase(); // auto suggest string functions
 
-let numbers3 = [1, 2, "3"]; // (string | number)[]
-
-numbers1.forEach((n) => n.toString); // n. auto sugest number properties because number1 is number[]
+user.push(1); // in tupples typescript dont show any error message and consider it as regular array
